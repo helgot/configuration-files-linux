@@ -14,12 +14,17 @@ fi
 
 # Check for NVIDIA GPU model
 GPU_MODEL=$(nvidia-smi --query-gpu=name --format=csv,noheader -i 0)
+# You can query your GPU model string by running 'nvidia-smi --query-gpu=name --format=csv,noheader -i 0' on the command line.
+EXPECTED_GPU_MODEL="NVIDIA GeForce RTX 2070 SUPER"
 
-if [[ "$GPU_MODEL" == *"2070"* ]]; then
+if [[ "$GPU_MODEL" == "$EXPECTED_GPU_MODEL" ]]; then
     # Set your desired overclock values
     CORE_CLOCK=80 # Increase in MHz
     MEMORY_CLOCK=800 # Increase in MHz
     POWER_LIMIT=250  # Power limit in Watts
+else
+	echo "The retrieved GPU model ('$GPU_MODEL') did not match the expected GPU model ('$EXPECTED_GPU_MODEL')."
+	exit 1
 fi
 
 # Validate overclock values (example ranges; adjust according to safe limits for your GPU)
