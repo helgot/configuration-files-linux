@@ -1,0 +1,4 @@
+brightness = 30 
+R = 99
+G = 99
+B = 95

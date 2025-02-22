@@ -1,0 +1,33 @@
+[font]
+size = 12.0
+
+[font.bold]
+family = "monospace"
+style = "Bold"
+
+[font.bold_italic]
+family = "monospace"
+style = "Bold Italic"
+
+[font.italic]
+family = "monospace"
+style = "Italic"
+
+[font.normal]
+family = "monospace"
+style = "Regular"
+
+[colors.primary]
+background = '#242829'
+foreground = '#dcd7d7'
+
+[colors.normal]
+black   = '#442829'
+red     = '#df2683'
+green   = '#02A25c'
+yellow  = '#fcfc22'
+blue    = '#AABBFF'
+magenta = '#bc7fd2'
+cyan    = '#aac7d6'
+white   = '#4a4b4b'
+
