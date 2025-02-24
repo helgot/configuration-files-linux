@@ -2,17 +2,16 @@
 
 # Set exit on failure. 
 set -e
-WALLPAPER_SCRIPT_PATH="~/.scripts/random_wallpaper.sh"
 
+WALLPAPER_SCRIPT_PATH="$HOME/.scripts/random_wallpaper.sh"
 
-# TODO: Check and Install dependencies.
-# I suppose I will assume that that use is running arch and has access to yay and pacman.
 echo -e "\x1b[32mInstalling yay dependencies.\x1b[m"
 yay -Syu 
-yay -S argyllcms
+yay -S --noconfirm argyllcms
+
 echo -e "\x1b[32mInstalling pacman dependencies.\x1b[m"
 sudo pacman -Syu
-sudo pacman -S tmux i3-wm i3status feh cronie libpulse pipewire pipewire-pulse
+sudo pacman -S --noconfirm tmux i3-wm i3status feh cronie libpulse pipewire pipewire-pulse
 
 echo -e "\x1b[32mCopying $(realpath scripts) to $(realpath ~/.scripts/)\x1b[m"
 rsync -a -v scripts/ ~/.scripts/  
