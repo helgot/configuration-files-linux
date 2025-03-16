@@ -19,8 +19,8 @@ EXPECTED_GPU_MODEL="NVIDIA GeForce RTX 2070 SUPER"
 
 if [[ "$GPU_MODEL" == "$EXPECTED_GPU_MODEL" ]]; then
     # Set your desired overclock values
-    CORE_CLOCK=80 # Increase in MHz
-    MEMORY_CLOCK=800 # Increase in MHz
+    CORE_CLOCK=70 # Increase in MHz
+    MEMORY_CLOCK=850 # Increase in MHz
     POWER_LIMIT=250  # Power limit in Watts
 else
 	echo "The retrieved GPU model ('$GPU_MODEL') did not match the expected GPU model ('$EXPECTED_GPU_MODEL')."

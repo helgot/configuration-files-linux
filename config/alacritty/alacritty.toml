@@ -1,5 +1,5 @@
 [font]
-size = 12.0
+size = 11.0
 
 [font.bold]
 family = "monospace"
@@ -28,6 +28,6 @@ green   = '#02A25c'
 yellow  = '#fcfc22'
 blue    = '#AABBFF'
 magenta = '#bc7fd2'
-cyan    = '#aac7d6'
+cyan    = '#33c7d6'
 white   = '#4a4b4b'
 
